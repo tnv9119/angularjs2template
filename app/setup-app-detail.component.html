@@ -1,0 +1,24 @@
+<table class="table" *ngIf="setupApp">
+    <tr>
+        <td>Id</td>
+        <td>{{setupApp.ID}}</td>
+    </tr>
+     <tr>
+        <td>Package</td>
+        <td>{{setupApp.Package}}</td>
+    </tr>
+     <tr>
+        <td>Imei</td>
+        <td>{{setupApp.Imei}}</td>
+    </tr>
+     <tr>
+        <td>Msisdn</td>
+        <td>{{setupApp.Msisdn}}</td>
+    </tr>
+</table>
+<a class="btn btn-primary" [routerLink]="['overview']">Overview</a>
+<a class="btn btn-primary" [routerLink]="['projects']">Projects</a>
+
+<a class="btn btn-default" [routerLink]="['/setupApps']">Go back</a>
+
+<router-outlet></router-outlet>
